@@ -58,3 +58,7 @@ pub fn u128_bytes (u: &u128) -> [u8; 16] {
         (u >> 8 * 0xf) as u8,
     ]
 }
+
+mod block;
+pub use crate::block::Block;
+
