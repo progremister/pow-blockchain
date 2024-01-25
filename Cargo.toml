@@ -5,10 +5,11 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
-time = "*"
-serde = "*"
-serde_derive = "*"
-serde_json = "*"
-sha2 = "*"
+[lib]
+name = "blockchainlib"
+path = "src/lib.rs"
 
+[dependencies]
+hex = "0.3.2"
+time = "0.3.31"
+crypto-hash = "0.3.4"
