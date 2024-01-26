@@ -1,6 +1,7 @@
 use std::collections::HashSet;
 use super::*;
 
+#[derive(Debug, Clone)]
 pub struct Output {
     pub to_address: Address,
     pub value: u64,
